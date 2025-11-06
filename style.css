@@ -1,0 +1,160 @@
+/* ---------- Global ---------- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f9fbfd; /* light background */
+  color: #1e2a38;
+  line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 10px 25px;
+  border-bottom: 3px solid #007acc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #004b8d;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #5b7fa6;
+  margin-top: 8px;
+}
+
+/* ---------- Main Layout ---------- */
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 25px;
+}
+
+/* ---------- Section ---------- */
+section {
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e3edf7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Headings ---------- */
+h2 {
+  color: #004b8d;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 2px solid #00a9e0; /* full-width underline */
+  position: relative;
+}
+
+.step h3 {
+  margin-top: 0;
+  color: #004b8d;
+  font-weight: 600;
+}
+
+.step h3::before {
+  content: "➤ ";
+  color: #00a9e0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* ---------- Step Boxes ---------- */
+.step {
+  margin-bottom: 25px;
+  background: #f3f8fd;
+  padding: 20px 25px;
+  border-left: 5px solid #00a9e0;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 169, 224, 0.1);
+}
+
+/* ---------- Links ---------- */
+a.link {
+  color: #007acc;
+  text-decoration: none;
+  border-bottom: 1px dotted #007acc;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a.link:hover {
+  color: #004b8d;
+  border-color: #004b8d;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #004b8d;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #a9e0ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .step {
+    padding: 18px;
+  }
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+.img-caption {
+  font-size: 0.9rem;
+  color: #5b7fa6;
+  margin-top: 8px;
+}
